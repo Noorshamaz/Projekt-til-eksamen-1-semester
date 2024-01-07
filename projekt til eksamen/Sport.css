@@ -1,0 +1,140 @@
+@media only screen and (min-width: 1440px) and (min-height: 1024px) {
+body { /*bestemmer dokumentes body*/
+background-color: #2d2828; /*bestemmer dokumentes baggrundsfarve*/
+overflow-x: hidden; /*skjuler alt det som er vandret når man scroller*/
+margin: 0px; 
+display: grid;
+grid-template-rows: 500px 100px;
+grid-template-columns: 1fr 30px 30px 30px 30px 30px 1fr;
+align-items: center;
+justify-items: center; }
+
+.Header {
+position: relative;
+bottom: 500px;
+width: 2230px;
+background-color: #222020;
+height: 300px;
+right: 10px;}
+
+.Sport {
+position: relative;
+top: 230px;
+left: 930px;
+color: white;
+font-size: 100px; }
+
+.Logo {
+position: relative;
+bottom: 140px; 
+left: 20px;}
+
+.navbar a {
+position: relative;
+bottom: 80px;
+float: right;
+display: block;
+font-size: 40px;
+color: white;
+text-align: center;
+padding: 14px 16px;
+right: 90px;
+text-decoration: none;
+object-fit: cover; 
+font-family: inter, sans-serif; }
+              
+.navbar a:hover {color: #556E53;}
+
+main#carousel {
+position: relative;
+top: 390px;
+right: 790px;
+grid-row: 1 / 2;
+grid-column: 1 / 8;
+width: 100vw;
+height: 500px;
+display: flex;
+align-items: center;
+justify-content: center;
+overflow: hidden;
+transform-style: preserve-3d;
+perspective: 600px;
+--items: 5;
+--middle: 3;
+--position: 1;
+pointer-events: none; }
+  
+div.item {
+position: absolute;
+width: 300px;
+height: 400px;
+background-color: coral;
+--r: calc(var(--position) - var(--offset));
+--abs: max(calc(var(--r) * -1), var(--r));
+transition: all 0.25s linear;
+transform: rotateY(calc(-10deg * var(--r)))
+translateX(calc(-300px * var(--r)));
+z-index: calc((var(--position) - var(--abs)));}
+  
+div.item:nth-of-type(1) {--offset: 1;}
+
+div.item:nth-of-type(2) {--offset: 2; }
+  
+div.item:nth-of-type(3) {--offset: 3; }
+
+div.item:nth-of-type(4) {--offset: 4; }
+
+div.item:nth-of-type(5) {--offset: 5; }
+  
+input:nth-of-type(1) {
+position: relative;
+top: 340px;
+right: 1300px;
+grid-column: 2 / 3;
+grid-row: 2 / 3;}
+ 
+input:nth-of-type(1):checked ~ main#carousel {--position: 1; }
+  
+input:nth-of-type(2) {
+position: relative;
+right: 1270px;
+top: 340px;
+grid-column: 3 / 4;
+grid-row: 2 / 3; }
+
+input:nth-of-type(2):checked ~ main#carousel {--position: 2; }
+  
+input:nth-of-type(3) {
+position: relative;
+top: 338px;
+right: 1240px;
+grid-column: 4 /5;
+grid-row: 2 / 3; }
+
+input:nth-of-type(3):checked ~ main#carousel {--position: 3; }
+  
+input:nth-of-type(4) {
+position: relative;
+top: 338px;
+right: 1200px;
+grid-column: 5 / 6;
+grid-row: 2 / 3; }
+
+input:nth-of-type(4):checked ~ main#carousel {--position: 4;}
+
+.footer {
+position: relative;
+top: 730px;
+width: 2230px;
+background-color: #222020;
+height: 300px;
+right: 10px;}
+
+.Privatlivspolitik {
+position: relative;
+text-decoration: none;
+color: white;
+top: 430px;
+left: 20px; }
+    
+} /*End tag til media query computer*/

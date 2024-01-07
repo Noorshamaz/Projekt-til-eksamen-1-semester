@@ -1,0 +1,66 @@
+@media only screen and (min-width: 1440px) and (min-height: 1024px) {
+body { /*bestemmer dokumentes body*/
+background-color: #2d2828; /*bestemmer dokumentes baggrundsfarve*/
+overflow-x: hidden; /*skjuler alt det som er vandret når man scroller*/
+margin: 0px; }
+
+.Header {
+background-color: #222020;
+padding: 60px;
+left: 200px;}
+    
+.navbar a {
+position: relative;
+bottom: 60px;
+float: right;
+display: block;
+font-size: 40px;
+color: white;
+text-align: center;
+padding: 14px 16px;
+left: 80px;
+text-decoration: none;
+object-fit: cover; 
+font-family: inter, sans-serif; }
+                  
+.navbar a:hover {color: #556E53;}
+
+.Info { 
+position: relative;
+left: 1000px;
+color: white;
+font-size: 80px;
+font-family: inter, sans-serif; }
+
+.Vedtægter {
+position: relative;
+color: white;
+font-size: 40px;
+bottom: 100px;
+left: 20px; }
+
+.Infotekst {
+position: relative;
+color: white;
+left: 20px;
+font-size: 20px;
+bottom: 120px;
+font-family: inter, sans-serif; }
+
+.footer {
+position: relative;
+bottom: 20px;
+width: 2230px;
+background-color: #222020;
+height: 300px;
+right: 10px;}
+
+.Privatlivspolitik {
+position: relative;
+top: 20px;
+color: white;
+text-decoration: none;
+left: 30px;
+}
+
+} /*End tag til media query computer*/
